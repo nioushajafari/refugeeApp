@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--onboarding dimens-->
+    <dimen name="button_corner_radius">23dp</dimen>
+
+    <!--text sizes-->
+
+    <dimen name="default_button_text_size">16sp</dimen>
+
+    <!--buttons -->
+    <dimen name="global_button_height">46dp</dimen>
+    <dimen name="button_margin">@dimen/cell_safe_distance_padding_x</dimen>
+    <dimen name="cell_safe_distance_padding_x">16dp</dimen>
+
+
+</resources>

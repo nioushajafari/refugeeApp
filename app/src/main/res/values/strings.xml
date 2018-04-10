@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">RefugeeApp</string>
+    <string name="test">This is a test</string>
+
+    <!--onboarding strings-->
+    <string name="onboarding_volunteer_login" comment="">Login as a volunteer</string>
+    <string name="onboarding_refugee_login" comment="">Login as a refugee</string>
+
+
+    <string name="font_fontLight">fonts/MuseoSans-100.otf</string>
+    <string name="font_fontMedium">fonts/MuseoSans-300.otf</string>
+    <string name="font_fontHeavy">fonts/MuseoSans-500.otf</string>
+    <string name="font_fontHeaviest">fonts/MuseoSans-700.otf</string>
+    <string name="font_gorditaBlack">fonts/GorditaBlack.otf</string>
+    <string name="font_gorditaBold">fonts/GorditaBold.otf</string>
+    <string name="font_gorditaLight">fonts/GorditaLight.otf</string>
+    <string name="font_gorditaMedium">fonts/GorditaMedium.otf</string>
+    <string name="font_gorditaRegular">fonts/GorditaRegular.otf</string>
+
 </resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom Font Text View -->
+    <declare-styleable name="CustomFontTextView">
+        <attr name="fontPath" format="string"/>
+        <attr name="scaleToFit" format="boolean"/>
+        <attr name="font_fontMedium" format="reference" />
+
+    </declare-styleable>
+</resources>

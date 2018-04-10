@@ -8,4 +8,54 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- ================ -->
+    <!-- Buttons          -->
+    <!-- ================ -->
+    <style name="Button" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.ButtonText</item>
+        <!-- NOTE: This doesn't work in the button's textAppearance. Only workaround I found was to put it directly in the button style. -->
+        <!--       Would be nice to find a workaround that lets you keep it in here. :-(                                                 -->
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:layout_height">@dimen/global_button_height</item>
+        <item name="android:layout_marginStart">@dimen/button_margin</item>
+        <item name="android:layout_marginEnd">@dimen/button_margin</item>
+    </style>
+
+    <style name="Button.Primary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="Button.Primary.Orange">
+        <item name="android:background">@drawable/button_primary_orange_background</item>
+    </style>
+
+    <!-- Buttons Onboarding-->
+    <style name="Button.Primary.Orange.Onboarding">
+        <item name="fontPath">@string/font_gorditaBold</item>
+    </style>
+
+
+
+    <!-- ================ -->
+    <!-- Text Appearances -->
+    <!-- ================ -->
+
+    <style name="TextAppearance" parent="@android:style/TextAppearance">
+        <item name="fontPath">?attr/font_fontMedium</item>
+    </style>
+
+    <style name="TextAppearance.ButtonText">
+        <item name="android:singleLine">true</item>
+        <item name="fontPath">@string/font_fontHeavy</item>
+        <!-- NOTE: This doesn't work in the button's textAppearance. Only workaround I found was to put it directly in the button style. -->
+        <!--       I still need this in here for when we use the style in RkSpannableStringBuilder though (e.g., for the group           -->
+        <!--       challenge invite flow). Would be nice to find a workaround that lets you keep it in here. :-(                         -->
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textSize">@dimen/default_button_text_size</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
 </resources>

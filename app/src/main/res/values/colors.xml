@@ -3,4 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--onboarding colors-->
+
+    <color name="sabertooth">#FFB636</color>
+    <color name="disabled_button">#CCCCCC</color>
+    <color name="sabertooth_pressed">#E6A330</color>
+
+    <color name="primary_white">@android:color/white</color>
+    <color name="light_gray">#EEEEEE</color>
+
+
 </resources>
