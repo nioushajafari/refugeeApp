@@ -10,14 +10,15 @@ class VolunteerList : Activity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
-    private val myDataset: Array<String> = arrayOf("hello", "world")
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_volunteer_list)
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = MyAdapter(myDataset)
+        viewAdapter = MyAdapter(initTestVolunteers())
 
         recyclerView = findViewById<RecyclerView>(R.id.my_recycler_view).apply {
             // use this setting to improve performance if you know that changes
@@ -30,5 +31,24 @@ class VolunteerList : Activity() {
             // specify an viewAdapter (see also next example)
             adapter = viewAdapter
         }
+    }
+
+    private fun initTestVolunteers(): Array<VolunteerSlot> {
+        val james: Volunteer = Volunteer("James", "Donald",
+                                        "123", "JDonald@gmail.com")
+
+        val jamesSlot: VolunteerSlot = VolunteerSlot(james, "Title", "Description",
+                                                    "Date", "Time", "Location")
+
+        val jamesSlot2: VolunteerSlot = VolunteerSlot(james, "Title", "Description",
+                "Date", "Time", "Location")
+
+        val jamesSlot3: VolunteerSlot = VolunteerSlot(james, "Title", "Description",
+                "Date", "Time", "Location")
+
+        val jamesSlot4: VolunteerSlot = VolunteerSlot(james, "Title", "Description",
+                "Date", "Time", "Location")
+
+        return arrayOf(jamesSlot, jamesSlot2, jamesSlot3, jamesSlot4)
     }
 }
